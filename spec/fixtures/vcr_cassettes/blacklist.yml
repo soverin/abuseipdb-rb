@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.abuseipdb.com/api/v2/blacklist?countMinimum=15&limit=10&maxAgeInDays=60
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Key:
+      - API_KEY
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 12 Jun 2019 10:26:00 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d43bc5d4786bac4ea141002d1bb2af9631560335113; expires=Thu, 11-Jun-20
+        10:25:13 GMT; path=/; domain=.abuseipdb.com; HttpOnly
+      x-powered-by:
+      - PHP/7.1.21
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 4e5b1e9beb489e4f-ATH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"generatedAt":"2019-06-12T11:25:13+01:00"},"data":[{"ipAddress":"193.32.163.89","totalReports":3942,"abuseConfidenceScore":"100"},{"ipAddress":"180.101.45.31","totalReports":1951,"abuseConfidenceScore":"100"},{"ipAddress":"222.187.221.72","totalReports":1938,"abuseConfidenceScore":"100"},{"ipAddress":"222.187.221.202","totalReports":1923,"abuseConfidenceScore":"100"},{"ipAddress":"222.187.221.222","totalReports":1912,"abuseConfidenceScore":"100"},{"ipAddress":"218.92.1.156","totalReports":1895,"abuseConfidenceScore":"100"},{"ipAddress":"61.147.247.18","totalReports":1840,"abuseConfidenceScore":"100"},{"ipAddress":"58.59.2.26","totalReports":1790,"abuseConfidenceScore":"100"},{"ipAddress":"222.187.221.84","totalReports":1787,"abuseConfidenceScore":"100"},{"ipAddress":"222.187.232.212","totalReports":1773,"abuseConfidenceScore":"100"}]}'
+    http_version: 
+  recorded_at: Wed, 12 Jun 2019 10:26:00 GMT
+recorded_with: VCR 4.0.0
