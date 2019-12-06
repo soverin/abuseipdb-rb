@@ -3,7 +3,7 @@ require 'abuseipdb/responses/report'
 module Abuseipdb
   module Endpoints
     class Report < Base
-      PATH = 'report'
+      PATH = 'report'.freeze
 
       def url_path
         PATH
@@ -20,7 +20,8 @@ module Abuseipdb
 
       def default_params(params)
         params[:categories] = params[:categories].join(',')
-        params.select do |key, _value| [:ip, :categories].include?(key)
+        params.select do |key, _value|
+          [:ip, :categories].include?(key)
         end
       end
     end

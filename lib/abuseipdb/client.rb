@@ -11,7 +11,7 @@ require 'abuseipdb/endpoints/report'
 module Abuseipdb
   class Client
 
-    ENDPOINTS = [:check, :blacklist, :check_block, :report].freeze
+    ENDPOINTS = %i[check blacklist check_block report].freeze
 
     attr_reader :configuration
 

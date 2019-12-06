@@ -8,7 +8,7 @@ RSpec.describe Abuseipdb::Endpoints::Report do
     end
   end
 
-  let(:params) { { ip: "127.0.0.2", categories: [22] } }
+  let(:params) { { ip: '127.0.0.2', categories: [22] } }
   let(:client) { Abuseipdb.client }
 
   subject(:report) { client.report }

@@ -3,7 +3,7 @@ require 'abuseipdb/responses/check_block'
 module Abuseipdb
   module Endpoints
     class CheckBlock < Base
-      PATH = 'check-block'
+      PATH = 'check-block'.freeze
 
       def url_path
         PATH

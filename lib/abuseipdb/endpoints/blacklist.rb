@@ -3,7 +3,7 @@ require 'abuseipdb/responses/blacklist'
 module Abuseipdb
   module Endpoints
     class Blacklist < Base
-      PATH = 'blacklist'
+      PATH = 'blacklist'.freeze
 
       def url_path
         PATH
