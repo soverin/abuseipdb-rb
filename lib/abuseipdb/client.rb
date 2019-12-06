@@ -6,11 +6,12 @@ require 'abuseipdb/endpoints/base'
 require 'abuseipdb/endpoints/check'
 require 'abuseipdb/endpoints/blacklist'
 require 'abuseipdb/endpoints/check_block'
+require 'abuseipdb/endpoints/report'
 
 module Abuseipdb
   class Client
 
-    ENDPOINTS = [:check, :blacklist, :check_block].freeze
+    ENDPOINTS = [:check, :blacklist, :check_block, :report].freeze
 
     attr_reader :configuration
 
