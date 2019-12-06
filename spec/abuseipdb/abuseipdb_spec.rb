@@ -4,7 +4,7 @@ RSpec.describe Abuseipdb do
   before :all do
     Abuseipdb.configure do |config|
       config.timeout = 20
-      config.api_key = 'API_KEY_1'
+      config.api_key = API_KEY
     end
   end
 
