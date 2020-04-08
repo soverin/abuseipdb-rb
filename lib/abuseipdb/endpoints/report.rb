@@ -19,7 +19,10 @@ module Abuseipdb
       private
 
       def default_params(params)
-        params[:categories] = params[:categories].join(',')
+        if params[:categories]
+          params[:categories] = params[:categories].is_a?(Array) ? params[:categories].join(',') : params[:categories]
+        end
+
         params.select do |key, _value|
           [:ip, :categories].include?(key)
         end
