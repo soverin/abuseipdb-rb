@@ -64,6 +64,7 @@ response.body
 | client.check.call | https://api.abuseipdb.com/api/v2/check |
 | client.blacklist.call | https://api.abuseipdb.com/api/v2/blacklist |
 | client.check_block.call | https://api.abuseipdb.com/api/v2/check-block |
+| client.report.call | https://api.abuseipdb.com/api/v2/report |
 
 
 
@@ -78,6 +79,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 [Report issues / feature requests](https://github.com/falegk/abuseipdb-rb/issues) and [pull requests](https://github.com/falegk/abuseipdb-rb/pulls) are welcome.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Thanks
+
+- [Petrik de Heus (p8)](https://github.com/p8)
 
 ## License
 
