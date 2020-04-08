@@ -19,8 +19,7 @@ module Abuseipdb
       private
 
       def default_params(params)
-        params.select do |key, _value| [:ipAddress, :maxAgeInDays, :verbose].include?(key)
-        end
+        params.select { |key, _value| [:ipAddress, :maxAgeInDays, :verbose].include?(key) }
       end
     end
   end
