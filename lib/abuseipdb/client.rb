@@ -30,7 +30,6 @@ module Abuseipdb
       url ||= "https://api.abuseipdb.com/api/#{@configuration.api_version}/"
 
       Faraday.new(url: url) do |faraday|
-        faraday.response :logger
         faraday.request :json
         faraday.ssl.verify = false
         faraday.headers['Accept'] = 'application/json'
